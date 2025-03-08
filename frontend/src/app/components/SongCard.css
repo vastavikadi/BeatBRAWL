@@ -1,0 +1,93 @@
+.song-card {
+    position: relative;
+    width: 170px;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #aaa;
+    border-radius: 12px;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.25);
+    background-color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .song-card:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.07);
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .song-card.selected {
+    background-color: #007bff;
+    color: white;
+    border-color: #0056b3;
+    box-shadow: 0 0 12px rgba(0, 123, 255, 0.6);
+    transform: scale(1.07);
+  }
+  
+  .song-card.selected .corner-icon {
+    color: white;
+  }
+  
+  /* Corner Icons */
+  .corner-icon {
+    position: absolute;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .top-left {
+    top: 6px;
+    left: 6px;
+  }
+  
+  .bottom-right {
+    bottom: 6px;
+    right: 6px;
+  }
+  
+  /* Song Details */
+  .song-title,
+  .song-artist,
+  .song-genre,
+  .song-playtime,
+  .song-year {
+    font-size: 14px;
+    font-weight: 500;
+    color: #222;
+    padding: 5px;
+    transition: border 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 6px;
+    width: 90%;
+  }
+  
+  /* Hover effect for song details */
+  .song-title:hover,
+  .song-artist:hover,
+  .song-genre:hover,
+  .song-playtime:hover,
+  .song-year:hover {
+    border: 2px solid #007bff;
+    background-color: rgba(0, 123, 255, 0.1);
+    box-shadow: inset 0 0 6px rgba(0, 123, 255, 0.4);
+    border-radius: 6px;
+  }
+  
+  /* Style for selected attribute */
+  .attribute-selected {
+    border: 2px solid #00cc44 !important;
+    background-color: rgba(0, 204, 68, 0.2) !important;
+    box-shadow: inset 0 0 8px rgba(0, 204, 68, 0.5) !important;
+  }
+  
+  .song-card.selected .attribute-selected {
+    border: 2px solid white !important;
+    background-color: rgba(255, 255, 255, 0.3) !important;
+    box-shadow: inset 0 0 8px rgba(255, 255, 255, 0.7) !important;
+  }

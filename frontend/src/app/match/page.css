@@ -1,0 +1,139 @@
+.match-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #2a2a2a;
+    padding: 20px;
+    position: relative;
+  }
+  
+  .game-status {
+    background-color: gray;
+    padding: 15px;
+    border-radius: 10px;
+    min-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  
+    /* Move to bottom right */
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .game-message {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #333;
+  }
+  
+  .player {
+    display: flex;
+    gap: 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 15px;
+    border-radius: 10px;
+  }
+  
+  .player-one {
+    margin-bottom: 40px;
+  }
+  
+  .player-two {
+    margin-top: 40px;
+  }
+  
+  .current-player {
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    transform: scale(1.02);
+  }
+  
+  .center {
+    display: flex;
+    gap: 20px;
+    border: 2px solid white;
+    padding: 20px;
+    border-radius: 12px;
+    margin: 20px 0;
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+  
+  
+  /* Add to your match.css file */
+  
+  .game-over-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .game-over-modal {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 2rem;
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  }
+  
+  .game-over-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .winner-announcement {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    color: #555;
+  }
+  
+  .player-stats {
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .player-stats h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    color: #444;
+  }
+  
+  .player-stats ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .player-stats li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eee;
+    font-size: 1rem;
+  }
+  
+  .player-stats li:last-child {
+    border-bottom: none;
+  }
+  
+  .game-over-actions {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Winner animations */
+  @keyframes confetti {
+    0% { transform: translateY(0) rotate(0); opacity: 1; }
+    100% { transform: translateY(100vh) rotate(720deg); opacity: 0; }
+  }
