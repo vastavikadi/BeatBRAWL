@@ -36,7 +36,7 @@ export default function HowToPlay() {
         <div className="container mx-auto flex justify-between items-center">
           <Link href="/" className="flex items-center gap-2">
             <Music className="text-yellow-400 h-6 w-6" />
-            <span className="font-bold text-xl">MusicHIVE</span>
+            <span className="font-bold text-xl">beatBRAWL</span>
           </Link>
           
           <Link 
@@ -53,14 +53,14 @@ export default function HowToPlay() {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">How To Play</h1>
-            <p className="text-lg text-gray-300">Learn the basics of MusicHIVE and start playing today!</p>
+            <p className="text-lg text-gray-300">Learn the basics of beatBRAWL and start playing today!</p>
           </div>
           
           {/* Introduction */}
           <div className="bg-gray-900/50 backdrop-blur-sm rounded-xl border border-gray-800 p-6 mb-12">
             <h2 className="text-2xl font-bold mb-4">Game Overview</h2>
             <p className="text-gray-300 mb-4">
-              MusicHIVE is a turn-based card game where players match musical cards based on shared attributes. 
+              beatBRAWL is a turn-based card game where players match musical cards based on shared attributes. 
               The goal is to be the first player to play all your cards.
             </p>
             <p className="text-gray-300">

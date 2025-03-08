@@ -115,7 +115,7 @@ export default function Card({ card, isPlayable = false, onPlay, showBack = fals
           <div className="absolute inset-2 rounded-xl bg-gray-900/90 p-4 flex flex-col items-center justify-center">
             <Music className="h-16 w-16 text-yellow-400 mb-6" />
             <div className="text-center">
-              <h3 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-amber-300">MusicHIVE</h3>
+              <h3 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-amber-300">beatBRAWL</h3>
               <p className="text-sm text-gray-400 mt-2">Turn-based musical card game</p>
             </div>
             

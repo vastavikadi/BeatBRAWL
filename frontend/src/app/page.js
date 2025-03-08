@@ -10,17 +10,17 @@ export default function Home() {
           <div className="flex items-center gap-2">
             <Music className="text-yellow-400 h-8 w-8" />
             <span className="font-bold text-2xl bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-amber-300">
-              MusicHIVE
+              beatBRAWL
             </span>
           </div>
           <div className="flex items-center gap-4">
-            <Link 
+            {/* <Link 
               href="/dashboard" 
               className="px-4 py-2 rounded-full bg-purple-800 hover:bg-purple-700 transition duration-300 flex items-center gap-2"
             >
               <User className="h-4 w-4" />
               <span>Dashboard</span>
-            </Link>
+            </Link> */}
             <Link 
               href="/login" 
               className="px-4 py-2 rounded-full bg-yellow-500 text-black hover:bg-yellow-400 transition duration-300"
@@ -40,7 +40,7 @@ export default function Home() {
               Collect <span className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-amber-300">Cards</span>
             </h1>
             <p className="text-lg text-gray-300">
-              MusicHIVE is a turn-based musical card game built on the HIVE blockchain. 
+              beatBRAWL is a turn-based musical card game built on the HIVE blockchain. 
               Choose cards for your deck, challenge friends, and compete to win in a musical fashion!
             </p>
             <div className="flex flex-wrap gap-4 pt-4">
@@ -96,7 +96,7 @@ export default function Home() {
       {/* Features Section */}
       <section className="container mx-auto px-6 py-16">
         <h2 className="text-3xl font-bold text-center mb-12">
-          Why <span className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-amber-300">MusicHIVE</span>?
+          Why <span className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-amber-300">beatBRAWL</span>?
         </h2>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -131,10 +131,10 @@ export default function Home() {
             </p>
             <div className="pt-4">
               <Link 
-                href="/login" 
+                href="/tutorial" 
                 className="px-8 py-4 rounded-full bg-gradient-to-r from-yellow-500 to-amber-400 text-black font-semibold text-lg hover:from-yellow-400 hover:to-amber-300 transition duration-300 shadow-lg shadow-amber-500/20"
               >
-                Create Your Account
+                Learn About Game
               </Link>
             </div>
           </div>
@@ -146,7 +146,7 @@ export default function Home() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="flex items-center gap-2">
             <Music className="text-yellow-400 h-6 w-6" />
-            <span className="font-bold text-xl">MusicHIVE</span>
+            <span className="font-bold text-xl">beatBRAWL</span>
           </div>
           <div className="flex flex-wrap justify-center gap-6">
             <Link href="/about" className="text-gray-400 hover:text-white transition">About</Link>
@@ -156,7 +156,7 @@ export default function Home() {
             <Link href="/contact" className="text-gray-400 hover:text-white transition">Contact</Link>
           </div>
           <div className="text-gray-500 text-sm">
-            &copy; {new Date().getFullYear()} MusicHIVE. All rights reserved.
+            &copy; {new Date().getFullYear()} beatBRAWL. All rights reserved.
           </div>
         </div>
       </footer>

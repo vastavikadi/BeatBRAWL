@@ -10,9 +10,9 @@ export default function Tutorial() {
   
   const tutorialSteps = [
     {
-      title: "Welcome to MusicHIVE",
-      description: "This tutorial will guide you through the basics of playing MusicHIVE. Let's get started!",
-      image: "/assets/images/tutorial/welcome.svg"
+      title: "Welcome to beatBRAWL",
+      description: "This tutorial will guide you through the basics of playing beatBRAWL. Let's get started!",
+      image: "/battleground/saiman.jpg"
     },
     {
       title: "Understanding Cards",
@@ -201,7 +201,7 @@ export default function Tutorial() {
     },
     {
       title: "Ready to Play?",
-      description: "Now that you understand the basics, it's time to start your MusicHIVE journey! Sign up to get your first 10 cards and begin playing.",
+      description: "Now that you understand the basics, it's time to start your beatBRAWL journey! Sign up to get your first 10 cards and begin playing.",
       component: (
         <div className="flex flex-col items-center gap-6">
           <img src="/assets/images/tutorial/complete.svg" alt="Tutorial Complete" className="w-40 h-40" />
@@ -245,7 +245,7 @@ export default function Tutorial() {
         <div className="container mx-auto flex justify-between items-center">
           <Link href="/" className="flex items-center gap-2">
             <Music className="text-yellow-400 h-6 w-6" />
-            <span className="font-bold text-xl">MusicHIVE</span>
+            <span className="font-bold text-xl">beatBRAWL</span>
           </Link>
           
           <Link 

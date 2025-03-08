@@ -5,7 +5,7 @@ import axios from "axios";
 import { SONG_CARDS } from "../../constants";
 import { getSocket } from "../../utils/socket.js";
 import { 
-  X, Music, User, Disc, ChevronLeft, LogOut, 
+  X, Music,Spade, User, Disc, ChevronLeft, LogOut, 
   Gift, Sparkles, AlertCircle, RefreshCcw, Volume2, VolumeX
 } from "lucide-react";
 
@@ -275,12 +275,16 @@ export default function Home() {
   const goToMusicMarketplace = () => {
     router.push("/inventory");
   };
+  const goToCardDeck = () => {
+    router.push("/card-deck");
+  };
 
   const logout = () => {
     localStorage.removeItem("hiveUsername");
     setUsername("Guest");
     setOwnedSongs([]);
     setCanClaimSongs(false);
+    router.push("/");
   };
 
   // Success modal component for claiming songs
@@ -380,7 +384,7 @@ export default function Home() {
                 <Gift className="w-7 h-7 text-purple-200" />
               </div>
               <div>
-                <h3 className="text-xl font-bold text-white">Welcome to UNOSIC!</h3>
+                <h3 className="text-xl font-bold text-white">Welcome to beatBRAWL!</h3>
                 <p className="text-blue-200 text-sm">Claim your 10 random song cards to get started</p>
               </div>
             </div>
@@ -417,7 +421,7 @@ export default function Home() {
         {/* Main card content (unchanged) */}
         <div className="text-center mb-8">
           <h1 className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500 mb-2 flex items-center justify-center">
-            <span className="text-6xl mr-2">🎮</span> UNOSIC
+            <span className="text-6xl mr-2">🎮</span> beatBRAWL
           </h1>
           <p className="text-blue-200 text-lg">Match songs and win the game!</p>
         </div>
@@ -515,6 +519,15 @@ export default function Home() {
           >
             <Music className="w-4 h-4 mr-1" />
             <span>Visit Music Marketplace</span>
+          </button>
+        </div>
+        <div className="mt-4 text-center">
+          <button
+            onClick={goToCardDeck}
+            className="mt-4 text-green-300 hover:text-yellow-200 transition-colors duration-300 text-sm flex items-center justify-center mx-auto"
+          >
+            <Spade className="w-4 h-4 mr-1" />
+            <span>Check Card Deck</span>
           </button>
         </div>
       </div>

@@ -27,7 +27,7 @@ export default function HiveLogin({ onSuccess }) {
     window.hive_keychain.requestHandshake(() => {
       window.hive_keychain.requestSignBuffer(
         hiveUsername,
-        "Login to MusicHIVE",
+        "Login to beatBRAWL",
         "Posting",
         async (response) => {
           if (response.success) {
@@ -53,7 +53,7 @@ export default function HiveLogin({ onSuccess }) {
                   }
                   
                   toast.success(
-                    "Hive Keychain login successful! Welcome to MusicHIVE."
+                    "Hive Keychain login successful! Welcome to beatBRAWL."
                   );
                   router.push('/game-menu');
                 }
@@ -77,7 +77,7 @@ export default function HiveLogin({ onSuccess }) {
   };
   
   return (
-    <div className="relative overflow-hidden bg-gradient-to-br from-gray-900/80 via-purple-900/30 to-gray-900/80 backdrop-blur-sm rounded-xl border border-purple-800/30 shadow-xl shadow-purple-900/10 p-8 transition-all hover:shadow-purple-800/20">
+    <div className="fixed top-0 left-0 w-full h-full overflow-hidden bg-gradient-to-br from-gray-900/80 via-purple-900/30 to-gray-900/80 backdrop-blur-sm rounded-xl border border-purple-800/30 shadow-xl shadow-purple-900/10 p-8 transition-all hover:shadow-purple-800/20">
       {/* Decorative elements */}
       <div className="absolute -top-20 -right-20 w-40 h-40 bg-yellow-400 opacity-10 rounded-full blur-3xl"></div>
       <div className="absolute -bottom-20 -left-20 w-40 h-40 bg-purple-400 opacity-10 rounded-full blur-3xl"></div>
@@ -94,7 +94,7 @@ export default function HiveLogin({ onSuccess }) {
         </div>
         
         <p className="text-gray-300 mb-8 leading-relaxed">
-          Connect your Hive account to play MusicHIVE, collect music cards, and compete with other players in this turn-based musical card game.
+          Connect your Hive account to play beatBRAWL, collect music cards, and compete with other players in this turn-based musical card game.
         </p>
         
         <form onSubmit={handleHiveKeychainLogin} className="space-y-6">

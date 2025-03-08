@@ -101,7 +101,7 @@ const ClaimSongsButton = ({ username, onClaimSuccess }) => {
             <Gift className="w-7 h-7 text-primary" />
           </div>
           <div>
-            <h3 className="text-xl font-bold text-foreground">Welcome to UNOSIC!</h3>
+            <h3 className="text-xl font-bold text-foreground">Welcome to beatBRAWL!</h3>
             <p className="text-muted-foreground text-sm">Claim your 10 random song cards to get started</p>
           </div>
         </div>
