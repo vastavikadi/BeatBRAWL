@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: music-app-backend
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node index.js
+    healthCheckPath: /api/songs
+    envVars:
+      - key: PORT
+        value: 3001
+      - key: NODE_ENV
+        value: production
+      - key: MONGODB_URI
+        sync: false
+      - key: SECRET_KEY
+        sync: false
+      - key: TOKEN_EXPIRY
+        value: "86400" # 24 hours in seconds
